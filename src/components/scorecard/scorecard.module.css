@@ -1,5 +1,3 @@
-/* Scorecard.module.css */
-
 /* Warm off-white paper + subtle fiber/grain + vignette */
 .paperTexture {
   /* base paper tone */
@@ -46,24 +44,6 @@
 
   background-blend-mode: multiply, multiply, multiply, normal, normal, normal;
 }
-
-/* premium edges: thick outer border + inner border frame */
-.outerEdge {
-  border-radius: 26px;
-  box-shadow:
-    0 10px 24px rgba(0, 0, 0, 0.15),
-    0 2px 0 rgba(255, 255, 255, 0.8) inset,
-    0 0 0 4px var(--tw-prose-foreground, #0f172a) inset; /* fallback */
-}
-
-/* inner frame to mimic the printed inlay */
-.innerFrame {
-  border-radius: 20px;
-  box-shadow:
-    0 0 0 2px var(--tw-prose-foreground, #0f172a) inset,
-    0 1px 0 rgba(255, 255, 255, 0.7) inset;
-}
-
 /* vertical fold down the middle */
 .fold {
   position: absolute;
@@ -81,14 +61,6 @@
   filter: blur(0.2px);
   pointer-events: none;
 }
-
-/* subtle letterpress for headings */
-.letterpress {
-  text-shadow:
-    0.5px 0.5px 0 rgba(0, 0, 0, 0.15),
-    -0.5px -0.5px 0 rgba(255, 255, 255, 0.7);
-}
-
 /* row hover ink effect */
 .row:hover {
   background: rgba(15, 23, 42, 0.05);
@@ -112,7 +84,7 @@
 
 /* make corners feel die-cut, slightly exaggerated */
 .roundedLarge {
-  border-radius: 26px;
+  border-radius: 36px;
 }
 /* Authentic golf scorecard dimensions and feel */
 .card {
@@ -128,7 +100,7 @@
   width: 100%;
   max-width: 850px; /* realistic scorecard proportions */
   aspect-ratio: 11/8.5; /* standard scorecard ratio */
-  border-radius: 8px; /* subtle rounded corners like real cards */
+  border-radius: 18px; /* subtle rounded corners like real cards */
   box-shadow: 
     0 2px 8px rgba(0, 0, 0, 0.12),
     0 1px 3px rgba(0, 0, 0, 0.08),
