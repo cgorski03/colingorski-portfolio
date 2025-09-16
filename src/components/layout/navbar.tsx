@@ -3,7 +3,14 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 
-export default function Header() {
+
+type NavbarProps = {
+  onAboutClick: () => void;
+  onProjectsClick: () => void;
+  onContactClick: () => void;
+}
+
+export default function Navbar({ onAboutClick, onProjectsClick, onContactClick }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -14,9 +21,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-  }
 
   return (
     <header
@@ -25,35 +29,28 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-foreground">Portfolio</div>
+          <div className="text-xl font-bold text-foreground">Colin Gorski </div>
 
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("projects")}
+              onClick={onProjectsClick}
               className="text-foreground hover:text-accent transition-colors capitalize"
             >
               Projects
             </button>
             <button
-              onClick={() => scrollToSection("skills")}
+              onClick={onAboutClick}
               className="text-foreground hover:text-accent transition-colors capitalize"
             >
-              Skills
+              About
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={onContactClick}
               className="text-foreground hover:text-accent transition-colors capitalize"
             >
               Contact
             </button>
           </div>
-
-          <Button
-            onClick={() => scrollToSection("contact")}
-            className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-md hover:shadow-lg transition-all"
-          >
-            Hire Me
-          </Button>
         </div>
       </nav>
     </header>
