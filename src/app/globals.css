@@ -3,84 +3,75 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Enhanced color palette with more vibrant golf course colors */
-  --background: oklch(0.96 0.01 85); /* Oatmeal background */
-  --foreground: oklch(0.2 0 0); /* Dark gray text */
-  --card: oklch(0.98 0.005 85); /* Slightly tinted cards */
-  --card-foreground: oklch(0.2 0 0); /* Dark gray card text */
-  --popover: oklch(1 0 0); /* White popovers */
-  --popover-foreground: oklch(0.2 0 0); /* Dark gray popover text */
-  --primary: oklch(0.55 0.18 142); /* Richer golf green */
-  --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.85 0.08 85); /* Warm sand color */
-  --secondary-foreground: oklch(0.25 0 0); /* Dark text on secondary */
-  --muted: oklch(0.92 0.02 85); /* Subtle oatmeal tint */
-  --muted-foreground: oklch(0.45 0 0); /* Medium gray muted text */
-  --accent: oklch(0.7 0.15 65); /* Golden yellow accent */
-  --accent-foreground: oklch(0.2 0 0); /* Dark accent text */
-  --destructive: oklch(0.55 0.2 25); /* Red for errors */
-  --destructive-foreground: oklch(1 0 0); /* White destructive text */
-  --border: oklch(0.82 0.03 85); /* Warm border color */
-  --input: oklch(1 0 0); /* White input fields */
-  --ring: oklch(0.55 0.18 142 / 0.5); /* Golf green focus ring */
-
-  /* Added custom golf course colors */
-  --fairway: oklch(0.6 0.15 142); /* Fairway green */
-  --rough: oklch(0.45 0.12 160); /* Darker rough green */
-  --sand: oklch(0.85 0.08 65); /* Sand trap color */
-  --water: oklch(0.6 0.15 220); /* Water hazard blue */
-  --tee: oklch(0.75 0.1 142); /* Tee box green */
-  --pin: oklch(0.7 0.2 25); /* Flag red */
-
-  --chart-1: oklch(0.55 0.18 142); /* Golf green */
-  --chart-2: oklch(0.7 0.15 65); /* Golden yellow */
-  --chart-3: oklch(0.6 0.15 220); /* Water blue */
-  --chart-4: oklch(0.85 0.08 65); /* Sand color */
-  --chart-5: oklch(0.45 0.12 160); /* Rough green */
-  --radius: 0.5rem;
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0.2 0 0);
-  --sidebar-primary: oklch(0.6 0.15 142);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.6 0.15 142);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.85 0 0);
-  --sidebar-ring: oklch(0.6 0.15 142 / 0.5);
+  /* Updated color tokens to oatmeal theme */
+  --background: 245 243 240; /* Oatmeal */
+  --foreground: 55 65 81; /* Dark Gray */
+  --card: 255 255 255; /* White */
+  --card-foreground: 55 65 81; /* Dark Gray for card text */
+  --popover: 255 255 255; /* White for popovers */
+  --popover-foreground: 55 65 81; /* Dark Gray for popover text */
+  --primary: 245 243 240; /* Oatmeal */
+  --primary-foreground: 55 65 81; /* Dark Gray for primary text */
+  --secondary: 229 231 235; /* Light Gray */
+  --secondary-foreground: 55 65 81; /* Dark Gray for secondary text */
+  --muted: 229 231 235; /* Light Gray for muted elements */
+  --muted-foreground: 107 114 128; /* Medium Gray for muted text */
+  --accent: 59 130 246; /* Sky Blue */
+  --accent-foreground: 255 255 255; /* White text for accent elements */
+  --destructive: 220 38 38; /* Red for errors or warnings */
+  --destructive-foreground: 255 255 255; /* White text for destructive actions */
+  --border: 209 213 219; /* Light Gray for borders */
+  --input: 255 255 255; /* White for input fields */
+  --ring: 59 130 246; /* Sky Blue for focus rings */
+  --chart-1: 59 130 246; /* Sky Blue for charts */
+  --chart-2: 245 158 11; /* Yellow for charts */
+  --chart-3: 220 38 38; /* Red for charts */
+  --chart-4: 16 185 129; /* Green for charts */
+  --chart-5: 139 92 246; /* Purple for charts */
+  --radius: 0.5rem; /* Corner rounding */
+  --sidebar: 245 243 240; /* Oatmeal for sidebar */
+  --sidebar-foreground: 55 65 81; /* Dark Gray for sidebar text */
+  --sidebar-primary: 255 255 255; /* White for primary sidebar elements */
+  --sidebar-primary-foreground: 55 65 81; /* Dark Gray for primary sidebar text */
+  --sidebar-accent: 59 130 246; /* Sky Blue for sidebar accents */
+  --sidebar-accent-foreground: 255 255 255; /* White for sidebar accent text */
+  --sidebar-border: 209 213 219; /* Light Gray for sidebar borders */
+  --sidebar-ring: 59 130 246; /* Sky Blue for sidebar focus rings */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: 31 41 55; /* Dark background */
+  --foreground: 249 250 251; /* Light text */
+  --card: 55 65 81; /* Dark card */
+  --card-foreground: 249 250 251; /* Light card text */
+  --popover: 55 65 81; /* Dark popover */
+  --popover-foreground: 249 250 251; /* Light popover text */
+  --primary: 59 130 246; /* Sky Blue primary */
+  --primary-foreground: 255 255 255; /* White primary text */
+  --secondary: 75 85 99; /* Medium gray secondary */
+  --secondary-foreground: 249 250 251; /* Light secondary text */
+  --muted: 75 85 99; /* Medium gray muted */
+  --muted-foreground: 156 163 175; /* Light gray muted text */
+  --accent: 59 130 246; /* Sky Blue accent */
+  --accent-foreground: 255 255 255; /* White accent text */
+  --destructive: 220 38 38; /* Red destructive */
+  --destructive-foreground: 255 255 255; /* White destructive text */
+  --border: 75 85 99; /* Medium gray border */
+  --input: 55 65 81; /* Dark input */
+  --ring: 59 130 246; /* Sky Blue ring */
+  --chart-1: 59 130 246; /* Sky Blue for charts */
+  --chart-2: 245 158 11; /* Yellow for charts */
+  --chart-3: 220 38 38; /* Red for charts */
+  --chart-4: 16 185 129; /* Green for charts */
+  --chart-5: 139 92 246; /* Purple for charts */
+  --sidebar: 31 41 55; /* Dark sidebar */
+  --sidebar-foreground: 249 250 251; /* Light sidebar text */
+  --sidebar-primary: 59 130 246; /* Sky Blue sidebar primary */
+  --sidebar-primary-foreground: 255 255 255; /* White sidebar primary text */
+  --sidebar-accent: 75 85 99; /* Medium gray sidebar accent */
+  --sidebar-accent-foreground: 249 250 251; /* Light sidebar accent text */
+  --sidebar-border: 75 85 99; /* Medium gray sidebar border */
+  --sidebar-ring: 59 130 246; /* Sky Blue sidebar ring */
 }
 
 @theme inline {
@@ -122,14 +113,6 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-  /* Added custom golf course color variables */
-  --color-fairway: var(--fairway);
-  --color-rough: var(--rough);
-  --color-sand: var(--sand);
-  --color-water: var(--water);
-  --color-tee: var(--tee);
-  --color-pin: var(--pin);
 }
 
 @layer base {
@@ -137,7 +120,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono;
   }
 }
 
