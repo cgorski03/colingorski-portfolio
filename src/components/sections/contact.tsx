@@ -33,10 +33,10 @@ export default function Contact() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Lorem Ipsum Dolor
+            Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
           </p>
         </div>
 
@@ -55,8 +55,7 @@ export default function Contact() {
                 </p>
                 <Button 
                   asChild 
-                  className="w-full"
-                  variant="outline"
+                  className="w-full bg-blue-500 text-white hover:bg-blue-600"
                 >
                   <a href={method.href} target="_blank" rel="noopener noreferrer">
                     {method.action}
@@ -69,17 +68,17 @@ export default function Contact() {
 
         <div className="bg-muted/30 rounded-lg p-8 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-4">
-            Lorem Ipsum Dolor Sit?
+            Ready to Start a Project?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Lorem Ipsum
+            <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600">
+              Start a Conversation
             </Button>
             <Button size="lg" variant="outline">
-              Consectetur
+              Download Resume
             </Button>
           </div>
         </div>

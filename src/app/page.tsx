@@ -1,6 +1,7 @@
 "use client"
 import React, { useRef } from "react";
 import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Projects from "@/components/sections/projects";
@@ -42,6 +43,7 @@ export default function Home() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer />
     </>
   );
 }

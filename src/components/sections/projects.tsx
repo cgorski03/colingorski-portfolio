@@ -37,10 +37,10 @@ export default function Projects() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Lorem Ipsum Dolor
+            Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Projects() {
             <Card key={index} className="group hover:shadow-lg transition-all duration-300">
               <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
                 <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                  <span className="text-muted-foreground">Lorem Ipsum</span>
+                  <span className="text-muted-foreground">Project Preview</span>
                 </div>
               </div>
               <CardHeader>
@@ -69,11 +69,11 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" className="flex-1">
-                    Lorem Ipsum
+                  <Button size="sm" className="flex-1 bg-blue-500 text-white hover:bg-blue-600">
+                    Live Demo
                   </Button>
                   <Button size="sm" variant="outline" className="flex-1">
-                    Consectetur
+                    View Code
                   </Button>
                 </div>
               </CardContent>
@@ -82,8 +82,8 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" variant="outline">
-            Lorem Ipsum Dolor
+          <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600">
+            View All Projects
           </Button>
         </div>
       </div>

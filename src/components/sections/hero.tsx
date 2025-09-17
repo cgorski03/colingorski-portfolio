@@ -2,7 +2,12 @@
 
 import { Button } from "@/components/ui/button"
 
-export default function Hero() {
+interface HeroProps {
+  onProjectsClick: () => void;
+  onContactClick: () => void;
+}
+
+export default function Hero({ onProjectsClick, onContactClick }: HeroProps) {
   return (
     <section className="pt-32 pb-20 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -26,12 +31,12 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
               <Button
                 size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90"
-                onClick={() => console.log("TODO: Implement")}
+                className="bg-blue-500 text-white hover:bg-blue-600"
+                onClick={onProjectsClick}
               >
                 View Projects
               </Button>
-              <Button variant="outline" size="lg" onClick={() => console.log("TODO: Implement")}>
+              <Button variant="outline" size="lg" onClick={onContactClick}>
                 Get In Touch
               </Button>
             </div>

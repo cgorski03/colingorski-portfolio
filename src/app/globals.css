@@ -4,74 +4,74 @@
 
 :root {
   /* Updated color tokens to oatmeal theme */
-  --background: 245 243 240; /* Oatmeal */
-  --foreground: 55 65 81; /* Dark Gray */
-  --card: 255 255 255; /* White */
-  --card-foreground: 55 65 81; /* Dark Gray for card text */
-  --popover: 255 255 255; /* White for popovers */
-  --popover-foreground: 55 65 81; /* Dark Gray for popover text */
-  --primary: 245 243 240; /* Oatmeal */
-  --primary-foreground: 55 65 81; /* Dark Gray for primary text */
-  --secondary: 229 231 235; /* Light Gray */
-  --secondary-foreground: 55 65 81; /* Dark Gray for secondary text */
-  --muted: 229 231 235; /* Light Gray for muted elements */
-  --muted-foreground: 107 114 128; /* Medium Gray for muted text */
-  --accent: 59 130 246; /* Sky Blue */
-  --accent-foreground: 255 255 255; /* White text for accent elements */
-  --destructive: 220 38 38; /* Red for errors or warnings */
-  --destructive-foreground: 255 255 255; /* White text for destructive actions */
-  --border: 209 213 219; /* Light Gray for borders */
-  --input: 255 255 255; /* White for input fields */
-  --ring: 59 130 246; /* Sky Blue for focus rings */
-  --chart-1: 59 130 246; /* Sky Blue for charts */
-  --chart-2: 245 158 11; /* Yellow for charts */
-  --chart-3: 220 38 38; /* Red for charts */
-  --chart-4: 16 185 129; /* Green for charts */
-  --chart-5: 139 92 246; /* Purple for charts */
+  --background: 45 20% 95%; /* Oatmeal */
+  --foreground: 220 13% 27%; /* Dark Gray */
+  --card: 0 0% 100%; /* White */
+  --card-foreground: 220 13% 27%; /* Dark Gray for card text */
+  --popover: 0 0% 100%; /* White for popovers */
+  --popover-foreground: 220 13% 27%; /* Dark Gray for popover text */
+  --primary: 45 20% 95%; /* Oatmeal */
+  --primary-foreground: 220 13% 27%; /* Dark Gray for primary text */
+  --secondary: 220 13% 91%; /* Light Gray */
+  --secondary-foreground: 220 13% 27%; /* Dark Gray for secondary text */
+  --muted: 220 13% 91%; /* Light Gray for muted elements */
+  --muted-foreground: 220 9% 46%; /* Medium Gray for muted text */
+  --accent: 217 91% 60%; /* Sky Blue */
+  --accent-foreground: 0 0% 100%; /* White text for accent elements */
+  --destructive: 0 84% 60%; /* Red for errors or warnings */
+  --destructive-foreground: 0 0% 100%; /* White text for destructive actions */
+  --border: 220 13% 84%; /* Light Gray for borders */
+  --input: 0 0% 100%; /* White for input fields */
+  --ring: 217 91% 60%; /* Sky Blue for focus rings */
+  --chart-1: 217 91% 60%; /* Sky Blue for charts */
+  --chart-2: 38 92% 50%; /* Yellow for charts */
+  --chart-3: 0 84% 60%; /* Red for charts */
+  --chart-4: 158 64% 52%; /* Green for charts */
+  --chart-5: 262 83% 58%; /* Purple for charts */
   --radius: 0.5rem; /* Corner rounding */
-  --sidebar: 245 243 240; /* Oatmeal for sidebar */
-  --sidebar-foreground: 55 65 81; /* Dark Gray for sidebar text */
-  --sidebar-primary: 255 255 255; /* White for primary sidebar elements */
-  --sidebar-primary-foreground: 55 65 81; /* Dark Gray for primary sidebar text */
-  --sidebar-accent: 59 130 246; /* Sky Blue for sidebar accents */
-  --sidebar-accent-foreground: 255 255 255; /* White for sidebar accent text */
-  --sidebar-border: 209 213 219; /* Light Gray for sidebar borders */
-  --sidebar-ring: 59 130 246; /* Sky Blue for sidebar focus rings */
+  --sidebar: 45 20% 95%; /* Oatmeal for sidebar */
+  --sidebar-foreground: 220 13% 27%; /* Dark Gray for sidebar text */
+  --sidebar-primary: 0 0% 100%; /* White for primary sidebar elements */
+  --sidebar-primary-foreground: 220 13% 27%; /* Dark Gray for primary sidebar text */
+  --sidebar-accent: 217 91% 60%; /* Sky Blue for sidebar accents */
+  --sidebar-accent-foreground: 0 0% 100%; /* White for sidebar accent text */
+  --sidebar-border: 220 13% 84%; /* Light Gray for sidebar borders */
+  --sidebar-ring: 217 91% 60%; /* Sky Blue for sidebar focus rings */
 }
 
 .dark {
-  --background: 31 41 55; /* Dark background */
-  --foreground: 249 250 251; /* Light text */
-  --card: 55 65 81; /* Dark card */
-  --card-foreground: 249 250 251; /* Light card text */
-  --popover: 55 65 81; /* Dark popover */
-  --popover-foreground: 249 250 251; /* Light popover text */
-  --primary: 59 130 246; /* Sky Blue primary */
-  --primary-foreground: 255 255 255; /* White primary text */
-  --secondary: 75 85 99; /* Medium gray secondary */
-  --secondary-foreground: 249 250 251; /* Light secondary text */
-  --muted: 75 85 99; /* Medium gray muted */
-  --muted-foreground: 156 163 175; /* Light gray muted text */
-  --accent: 59 130 246; /* Sky Blue accent */
-  --accent-foreground: 255 255 255; /* White accent text */
-  --destructive: 220 38 38; /* Red destructive */
-  --destructive-foreground: 255 255 255; /* White destructive text */
-  --border: 75 85 99; /* Medium gray border */
-  --input: 55 65 81; /* Dark input */
-  --ring: 59 130 246; /* Sky Blue ring */
-  --chart-1: 59 130 246; /* Sky Blue for charts */
-  --chart-2: 245 158 11; /* Yellow for charts */
-  --chart-3: 220 38 38; /* Red for charts */
-  --chart-4: 16 185 129; /* Green for charts */
-  --chart-5: 139 92 246; /* Purple for charts */
-  --sidebar: 31 41 55; /* Dark sidebar */
-  --sidebar-foreground: 249 250 251; /* Light sidebar text */
-  --sidebar-primary: 59 130 246; /* Sky Blue sidebar primary */
-  --sidebar-primary-foreground: 255 255 255; /* White sidebar primary text */
-  --sidebar-accent: 75 85 99; /* Medium gray sidebar accent */
-  --sidebar-accent-foreground: 249 250 251; /* Light sidebar accent text */
-  --sidebar-border: 75 85 99; /* Medium gray sidebar border */
-  --sidebar-ring: 59 130 246; /* Sky Blue sidebar ring */
+  --background: 220 39% 17%; /* Dark background */
+  --foreground: 210 20% 98%; /* Light text */
+  --card: 220 13% 26%; /* Dark card */
+  --card-foreground: 210 20% 98%; /* Light card text */
+  --popover: 220 13% 26%; /* Dark popover */
+  --popover-foreground: 210 20% 98%; /* Light popover text */
+  --primary: 217 91% 60%; /* Sky Blue primary */
+  --primary-foreground: 0 0% 100%; /* White primary text */
+  --secondary: 220 13% 34%; /* Medium gray secondary */
+  --secondary-foreground: 210 20% 98%; /* Light secondary text */
+  --muted: 220 13% 34%; /* Medium gray muted */
+  --muted-foreground: 220 9% 65%; /* Light gray muted text */
+  --accent: 217 91% 60%; /* Sky Blue accent */
+  --accent-foreground: 0 0% 100%; /* White accent text */
+  --destructive: 0 84% 60%; /* Red destructive */
+  --destructive-foreground: 0 0% 100%; /* White destructive text */
+  --border: 220 13% 34%; /* Medium gray border */
+  --input: 220 13% 26%; /* Dark input */
+  --ring: 217 91% 60%; /* Sky Blue ring */
+  --chart-1: 217 91% 60%; /* Sky Blue for charts */
+  --chart-2: 38 92% 50%; /* Yellow for charts */
+  --chart-3: 0 84% 60%; /* Red for charts */
+  --chart-4: 158 64% 52%; /* Green for charts */
+  --chart-5: 262 83% 58%; /* Purple for charts */
+  --sidebar: 220 39% 17%; /* Dark sidebar */
+  --sidebar-foreground: 210 20% 98%; /* Light sidebar text */
+  --sidebar-primary: 217 91% 60%; /* Sky Blue sidebar primary */
+  --sidebar-primary-foreground: 0 0% 100%; /* White sidebar primary text */
+  --sidebar-accent: 220 13% 34%; /* Medium gray sidebar accent */
+  --sidebar-accent-foreground: 210 20% 98%; /* Light sidebar accent text */
+  --sidebar-border: 220 13% 34%; /* Medium gray sidebar border */
+  --sidebar-ring: 217 91% 60%; /* Sky Blue sidebar ring */
 }
 
 @theme inline {
@@ -122,5 +122,11 @@
   body {
     @apply bg-background text-foreground font-mono;
   }
+}
+
+/* Debug: Force background color to test if variables work */
+body {
+  background-color: hsl(var(--background)) !important;
+  color: hsl(var(--foreground)) !important;
 }
 
