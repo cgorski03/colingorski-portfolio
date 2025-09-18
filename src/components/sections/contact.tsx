@@ -5,25 +5,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const contactMethods = [
   {
-    title: "Lorem Ipsum",
-    description: "Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore",
-    value: "lorem@ipsum.com",
-    action: "Lorem Ipsum",
-    href: "mailto:lorem@ipsum.com"
+    title: "Email",
+    description: "Get in touch for opportunities, collaborations, or just to say hello",
+    value: "cgorski03@gmail.com",
+    action: "Send Email",
+    href: "mailto:cgorski03@gmail.com"
   },
   {
-    title: "Consectetur",
-    description: "Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    value: "linkedin.com/in/loremipsum",
-    action: "Consectetur",
-    href: "https://linkedin.com/in/loremipsum"
+    title: "LinkedIn",
+    description: "Connect with me professionally and view my career updates",
+    value: "linkedin.com/in/colingorski",
+    action: "Connect",
+    href: "https://www.linkedin.com/in/colingorski/"
   },
   {
-    title: "Adipiscing",
-    description: "Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim",
-    value: "github.com/loremipsum",
-    action: "Adipiscing",
-    href: "https://github.com/loremipsum"
+    title: "GitHub",
+    description: "Explore my open source projects and code repositories",
+    value: "github.com/cgorski03",
+    action: "View Code",
+    href: "https://github.com/cgorski03"
   }
 ]
 
@@ -36,7 +36,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+            I'm always interested in new opportunities, collaborations, and conversations about technology. Whether you have a project in mind or just want to connect, I'd love to hear from you.
           </p>
         </div>
 
@@ -53,8 +53,8 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4 font-mono">
                   {method.value}
                 </p>
-                <Button 
-                  asChild 
+                <Button
+                  asChild
                   className="w-full bg-blue-500 text-white hover:bg-blue-600"
                 >
                   <a href={method.href} target="_blank" rel="noopener noreferrer">
@@ -66,22 +66,6 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="bg-muted/30 rounded-lg p-8 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            Ready to Start a Project?
-          </h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600">
-              Start a Conversation
-            </Button>
-            <Button size="lg" variant="outline">
-              Download Resume
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   )

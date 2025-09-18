@@ -25,7 +25,7 @@ export default function Hero({ onProjectsClick, onContactClick }: HeroProps) {
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Full-Stack Software Engineer</h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty">
-              Software engineer and founder who builds full-stack solutions that deliver. From owning production software in a professional environment to launching a SaaS, I am passionate in designing and shipping software that solves real-world problems.
+              Computer Science graduate and software engineer passionate about building full-stack solutions that deliver measurable impact. From optimizing production workflows at Lockheed Martin to launching ForeAdvantage Golf SaaS, I specialize in creating software that solves real-world problems.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">

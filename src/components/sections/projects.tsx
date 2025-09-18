@@ -6,28 +6,28 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "Lorem Ipsum Dolor",
-    description: "Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.",
-    technologies: ["Lorem", "Ipsum", "Dolor", "Sit", "Amet"],
+    title: "Synchrony Analytics - Capstone",
+    description: "TODO",
+    technologies: ["Next.js 15", "TypeScript", "MongoDB", "AWS", "Recharts"],
     image: "/project1.jpg",
     liveUrl: "https://example.com",
     githubUrl: "https://github.com/example"
   },
   {
-    title: "Consectetur Adipiscing",
-    description: "Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation.",
-    technologies: ["Consectetur", "Adipiscing", "Elit", "Sed", "Eiusmod"],
+    title: "Magic Folder",
+    description: "Built privacy-first, semantic file-manager that indexes and searches 10k+ local documents without cloud calls. Integrated Faiss for sub-50ms vector similarity search with 95% top-5 precision on user queries.",
+    technologies: ["C++20", "Faiss", "Ollama", "SQLite", "SQLCipher"],
     image: "/project2.jpg",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "https://github.com/cgorski03/magic-folder",
+    githubUrl: "https://github.com/cgorski03/magic-folder"
   },
   {
-    title: "Tempor Incididunt",
-    description: "Ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.",
-    technologies: ["Tempor", "Incididunt", "Labore", "Dolore", "Magna"],
+    title: "ForeAdvantage Golf",
+    description: "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Built serverless AWS backend with Step Functions, integrated Stripe subscriptions and NextAuth.js, achieving 99.9% uptime.",
+    technologies: ["Next.js 15", "AWS", "Stripe", "NextAuth.js", "Telegram Bot"],
     image: "/project3.jpg",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    liveUrl: "https://foreadvantagegolf.com",
+    githubUrl: "https://github.com/cgorski03"
   }
 ]
 
@@ -40,7 +40,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            A showcase of my recent projects spanning full-stack web development, systems programming, and SaaS applications. Each project demonstrates different aspects of my technical skills and problem-solving approach.
           </p>
         </div>
 

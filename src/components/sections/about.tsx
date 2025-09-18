@@ -4,28 +4,29 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 const skills = [
-  "React", "TypeScript", "Node.js", "Python", "PostgreSQL", "MongoDB",
-  "AWS", "Docker", "Git", "Next.js", "Tailwind CSS", "GraphQL"
+  "C#", "C++", "TypeScript", "JavaScript", "Python", "Java", "SQL",
+  "Next.js", "React", "Node.js", ".NET", "MongoDB", "SQL Server", "MySQL",
+  "AWS", "Docker", "Git", "Tailwind CSS", "Express", "Vue.js"
 ]
 
 const experience = [
   {
-    title: "Lorem Ipsum Dolor",
-    company: "Sit Amet Consectetur",
-    period: "2022 - Present",
-    description: "Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam."
+    title: "Software Engineering Intern",
+    company: "Lockheed Martin – Sikorsky",
+    period: "May 2024 - July 2024",
+    description: "Owned full-stack job-tracking native app used by 200+ technicians, cutting average job-search time by over 50%. Spearheaded development of WPF interactive diagramming tool to replace 30-year-old PDF workflow and oversaw initial testing phase on shop floor."
   },
   {
-    title: "Ut Enim Ad Minim",
-    company: "Veniam Quis Nostrud",
-    period: "2020 - 2022",
-    description: "Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor."
+    title: "Founder & Engineer",
+    company: "ForeAdvantage Golf",
+    period: "July 2024 - Present",
+    description: "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Built serverless AWS backend with Step Functions, integrated Stripe subscriptions and NextAuth.js"
   },
   {
-    title: "Duis Aute Irure",
-    company: "Dolor In Reprehenderit",
-    period: "2019 - 2020",
-    description: "Voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+    title: "Undergraduate Teaching Assistant",
+    company: "University of Connecticut",
+    period: "Aug 2023 - May 2024",
+    description: "Maintained and graded 12 C assignments used by 300+ students. Led weekly lab sections and provided 1-on-1 tutoring for students where necessary to drive success."
   }
 ]
 
@@ -40,19 +41,20 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore 
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-                ut aliquip ex ea commodo consequat.
+                I'm a Computer Science graduate from the University of Connecticut with a passion for building
+                full-stack solutions that solve real-world problems. I earned my B.S. in Computer Science
+                and gained hands-on experience through professional and personal ventures.
               </p>
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum.
+                As a Software Engineering Intern at Lockheed Martin, I owned production software used by 200+
+                technicians, delivering measurable impact through optimized workflows and cost savings.
+                Simultaneously, I founded ForeAdvantage Golf, a SaaS platform that monitors tee times 610+ golf courses
+                and has grown to 20+ users within 6 months.
               </p>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-                dicta sunt explicabo.
+                My technical expertise spans from low-level systems programming in C/C++ to modern web development
+                with Next.js and cloud infrastructure on AWS. I'm passionate about creating software that delivers
+                real value, whether it's optimizing production workflows or building consumer-facing applications that help people spend more time doing what is important.
               </p>
             </div>
           </div>
