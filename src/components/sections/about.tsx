@@ -33,7 +33,7 @@ const experience = [
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 border-t border-border/50">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
@@ -41,20 +41,16 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a Computer Science graduate from the University of Connecticut with a passion for building
-                full-stack solutions that solve real-world problems. I earned my B.S. in Computer Science
-                and gained hands-on experience through professional and personal ventures.
+                Computer Science graduate from UConn passionate about full-stack solutions that solve real problems. 
+                Earned B.S. with 3.6 GPA through hands-on internships and entrepreneurial ventures.
               </p>
               <p>
-                As a Software Engineering Intern at Lockheed Martin, I owned production software used by 200+
-                technicians, delivering measurable impact through optimized workflows and cost savings.
-                Simultaneously, I founded ForeAdvantage Golf, a SaaS platform that monitors tee times 610+ golf courses
-                and has grown to 20+ users within 6 months.
+                At Lockheed Martin, owned production software used by 200+ technicians, cutting job-search time 
+                from 12 min to 2 min. Founded ForeAdvantage Golf SaaS monitoring 610+ golf courses, growing to 20+ users.
               </p>
               <p>
-                My technical expertise spans from low-level systems programming in C/C++ to modern web development
-                with Next.js and cloud infrastructure on AWS. I'm passionate about creating software that delivers
-                real value, whether it's optimizing production workflows or building consumer-facing applications that help people spend more time doing what is important.
+                Technical expertise spans C/C++ systems programming to Next.js web development and AWS cloud infrastructure. 
+                Focused on creating software that delivers measurable value.
               </p>
             </div>
           </div>

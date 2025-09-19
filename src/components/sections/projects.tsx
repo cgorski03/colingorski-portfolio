@@ -40,7 +40,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent projects spanning full-stack web development, systems programming, and SaaS applications. Each project demonstrates different aspects of my technical skills and problem-solving approach.
+            Recent projects spanning full-stack web development, systems programming, and SaaS applications.
           </p>
         </div>
 
