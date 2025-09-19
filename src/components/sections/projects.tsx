@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 const projects = [
   {
     title: "Synchrony Analytics - Capstone",
-    description: "TODO",
+    description: "Next.js dashboard with Recharts heatmaps providing real-time observability into Core Web Vitals. MongoDB pipeline tested to 500k events/day with 45ms query latency.",
     technologies: ["Next.js 15", "TypeScript", "MongoDB", "AWS", "Recharts"],
     image: "/project1.jpg",
     liveUrl: "https://example.com",
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Magic Folder",
-    description: "Built privacy-first, semantic file-manager that indexes and searches 10k+ local documents without cloud calls. Integrated Faiss for sub-50ms vector similarity search with 95% top-5 precision on user queries.",
+    description: "Privacy-first semantic file-manager indexing 10k+ local documents without cloud calls. Faiss integration enables sub-50ms vector search with 95% precision.",
     technologies: ["C++20", "Faiss", "Ollama", "SQLite", "SQLCipher"],
     image: "/project2.jpg",
     liveUrl: "https://github.com/cgorski03/magic-folder",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "ForeAdvantage Golf",
-    description: "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Built serverless AWS backend with Step Functions, integrated Stripe subscriptions and NextAuth.js, achieving 99.9% uptime.",
+    description: "Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with Stripe subscriptions achieving 99.9% uptime.",
     technologies: ["Next.js 15", "AWS", "Stripe", "NextAuth.js", "Telegram Bot"],
     image: "/project3.jpg",
     liveUrl: "https://foreadvantagegolf.com",
@@ -33,10 +33,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-6 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+    <section id="projects" className="py-24 px-6 bg-muted/30 border-t border-border/50">
+      <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -44,15 +44,15 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+            <Card key={index} className="group duration-300 flex flex-col h-full space-between">
               <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
                 <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
                   <span className="text-muted-foreground">Project Preview</span>
                 </div>
               </div>
-              <CardHeader>
+              <CardHeader className="flex-grow">
                 <CardTitle className="group-hover:text-accent transition-colors">
                   {project.title}
                 </CardTitle>
@@ -60,8 +60,8 @@ export default function Projects() {
                   {project.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
+              <CardContent className="mt-auto">
+                <div className="flex flex-wrap gap-2 mb-4 overflow-x-auto min-h-[2.5rem]">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary">
                       {tech}
@@ -71,9 +71,15 @@ export default function Projects() {
                 <div className="flex gap-2">
                   <Button size="sm" className="flex-1 bg-blue-500 text-white hover:bg-blue-600">
                     Live Demo
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
                   </Button>
                   <Button size="sm" variant="outline" className="flex-1">
                     View Code
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
                   </Button>
                 </div>
               </CardContent>

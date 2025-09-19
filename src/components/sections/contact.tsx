@@ -29,10 +29,10 @@ const contactMethods = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+    <section id="contact" className="py-24 px-6 border-t border-border/50">
+      <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -40,7 +40,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {contactMethods.map((method, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-all duration-300">
               <CardHeader>
@@ -53,12 +53,15 @@ export default function Contact() {
                 <p className="text-sm text-muted-foreground mb-4 font-mono">
                   {method.value}
                 </p>
-                <Button
-                  asChild
+                <Button 
+                  asChild 
                   className="w-full bg-blue-500 text-white hover:bg-blue-600"
                 >
                   <a href={method.href} target="_blank" rel="noopener noreferrer">
                     {method.action}
+                    <svg className="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
                   </a>
                 </Button>
               </CardContent>

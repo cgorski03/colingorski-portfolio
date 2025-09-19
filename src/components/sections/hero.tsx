@@ -4,16 +4,16 @@ import { Button } from "@/components/ui/button"
 
 interface HeroProps {
   onProjectsClick: () => void;
-  onContactClick: () => void;
+  onDownloadResume: () => void;
 }
 
-export default function Hero({ onProjectsClick, onContactClick }: HeroProps) {
+export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
   return (
-    <section className="pt-32 pb-20 px-6">
-      <div className="container mx-auto max-w-6xl">
+    <section className="pt-32 pb-24 px-6">
+      <div className="container mx-auto max-w-4xl">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-shrink-0">
-            <div className="w-48 h-48 rounded-full bg-muted border-2 border-accent/20 flex items-center justify-center">
+            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full bg-muted border-2 border-accent/20 flex items-center justify-center">
               <img
                 src="/headshot.jpg"
                 alt="Professional headshot"
@@ -36,8 +36,8 @@ export default function Hero({ onProjectsClick, onContactClick }: HeroProps) {
               >
                 View Projects
               </Button>
-              <Button variant="outline" size="lg" onClick={onContactClick}>
-                Get In Touch
+              <Button variant="outline" size="lg" onClick={onDownloadResume}>
+                Download Resume
               </Button>
             </div>
 
