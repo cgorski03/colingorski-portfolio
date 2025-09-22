@@ -85,7 +85,13 @@ const skills = [
 
 const experience = [
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineer (Manufacturing)",
+    company: "Lockheed Martin – Sikorsky",
+    period: "July 2024 - Present",
+    description: "Owned full-stack job-tracking native app used by 200+ technicians, cutting average job-search time by over 50%. Spearheaded development of WPF interactive diagramming tool to replace 30-year-old PDF workflow and oversaw initial testing phase on shop floor."
+  },
+  {
+    title: "Software Engineering Intern (Manufacturing)",
     company: "Lockheed Martin – Sikorsky",
     period: "May 2024 - July 2024",
     description: "Owned full-stack job-tracking native app used by 200+ technicians, cutting average job-search time by over 50%. Spearheaded development of WPF interactive diagramming tool to replace 30-year-old PDF workflow and oversaw initial testing phase on shop floor."
@@ -95,14 +101,7 @@ const experience = [
     company: "ForeAdvantage Golf",
     period: "July 2024 - Present",
     description: "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Built serverless AWS backend with Step Functions, integrated Stripe subscriptions and NextAuth.js"
-  },
-  {
-    title: "Undergraduate Teaching Assistant",
-    company: "University of Connecticut",
-    period: "Aug 2023 - May 2024",
-    description: "Maintained and graded 12 C assignments used by 300+ students. Led weekly lab sections and provided 1-on-1 tutoring for students where necessary to drive success."
-  }
-]
+  }]
 
 export default function About() {
   return (
@@ -140,7 +139,7 @@ export default function About() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5">
+                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
                       <span className="text-sm">{skill.icon}</span>
                       {skill.name}
                     </Badge>

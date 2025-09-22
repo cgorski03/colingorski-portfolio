@@ -30,19 +30,18 @@ export default function Navbar({ onAboutClick, onProjectsClick, onContactClick }
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold text-foreground">Colin Gorski </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={onProjectsClick}
-              className="text-foreground hover:text-accent transition-colors capitalize"
-            >
-              Projects
-            </button>
             <button
               onClick={onAboutClick}
               className="text-foreground hover:text-accent transition-colors capitalize"
             >
               About
+            </button>
+            <button
+              onClick={onProjectsClick}
+              className="text-foreground hover:text-accent transition-colors capitalize"
+            >
+              Projects
             </button>
             <button
               onClick={onContactClick}
