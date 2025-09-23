@@ -17,7 +17,8 @@ import {
   SQLServerIcon,
   AWSIcon,
   DockerIcon,
-  GitIcon
+  GitIcon,
+  StripeIcon
 } from "@/components/ui/icons"
 
 const skills = [
@@ -78,15 +79,22 @@ const skills = [
     icon: <DockerIcon />
   },
   {
+    name: "Stripe",
+    icon: <StripeIcon />
+  },
+  {
     name: "Git",
     icon: <GitIcon />
   }
 ]
 
+// TODO: I want the bullets to have associated technologies.
+// This would allow me to make something that will filter the bullets by the specific bullets to point to specific  
+// bullets that back up the techonolgy skills claim
 const aboutData = {
   title: "About Me",
   description: [
-    "Computer Science graduate from UConn passionate about full-stack solutions that solve real problems. Earned B.S. with 3.6 GPA through hands-on internships and entrepreneurial ventures.",
+    "Computer Science graduate from UConn passionate about building full-stack solutions to solve real problems. Earned B.S. with hands-on internships and entrepreneurial ventures.",
     "At Lockheed Martin, owned production software used by 200+ technicians, cutting job-search time from 12 min to 2 min. Founded ForeAdvantage Golf SaaS monitoring 610+ golf courses, growing to 20+ users.",
     "Technical expertise spans C/C++ systems programming to Next.js web development and AWS cloud infrastructure. Focused on creating software that delivers measurable value."
   ],
@@ -106,21 +114,20 @@ const aboutData = {
       company: "Lockheed Martin – Sikorsky",
       period: "July 2024 - Present",
       achievements: [
-        "Engineered C#/.NET job-tracking app for 200+ technicians, reducing search time by 50%",
-        "Leading WPF tool development to replace 30-year legacy system"
+        "Engineered a full‑stack pick‑to‑light system (React, C#) that cut material‑location time by 80% (260+ technician hours monthly) by parsing job materials and driving a bin‑lights controller",
+        "Shipped GitOps-style CI/CD for harness tests with a custom-built linter enforcing standards; containerized pipeline delivers 20s deploys with commit-linked, versioned releases and rollback"
       ],
-      tech: ["C#", ".NET", "WPF", "SQL Server", "Docker"],
-      note: "(Promoted from Intern • May 2024 - July 2024)"
+      tech: ["TypeScript", "React", "C#", "AWS", "Docker", "Linux"],
     },
     {
       title: "Software Engineering Intern (Manufacturing)",
       company: "Lockheed Martin – Sikorsky",
       period: "May 2024 - July 2024",
       achievements: [
-        "Contributed to job-tracking app development, implementing key workflow improvements",
-        "Assisted in WPF diagramming tool design and initial testing phases"
+        "Engineered a React + C# job‑tracking app for 200+ technicians; 50% faster searches and ~70 hrs/week saved with end‑to‑end observability",
+        "Engineered a WPF‑based interactive alternative to PDF design diagrams; completed initial trials and now driving the corporate adoption case"
       ],
-      tech: ["C#", ".NET", "WPF", "SQL Server"]
+      tech: ["TypeScript", "React", "C#", "WPF", "AWS"]
     }
   ]
 }
