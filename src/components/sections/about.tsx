@@ -83,88 +83,117 @@ const skills = [
   }
 ]
 
-const experience = [
-  {
-    title: "Software Engineer (Manufacturing)",
-    company: "Lockheed Martin – Sikorsky",
-    period: "July 2024 - Present",
-    description: "Owned full-stack job-tracking native app used by 200+ technicians, cutting average job-search time by over 50%. Spearheaded development of WPF interactive diagramming tool to replace 30-year-old PDF workflow and oversaw initial testing phase on shop floor."
-  },
-  {
-    title: "Software Engineering Intern (Manufacturing)",
-    company: "Lockheed Martin – Sikorsky",
-    period: "May 2024 - July 2024",
-    description: "Owned full-stack job-tracking native app used by 200+ technicians, cutting average job-search time by over 50%. Spearheaded development of WPF interactive diagramming tool to replace 30-year-old PDF workflow and oversaw initial testing phase on shop floor."
-  },
-  {
-    title: "Founder & Engineer",
-    company: "ForeAdvantage Golf",
-    period: "July 2024 - Present",
-    description: "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Built serverless AWS backend with Step Functions, integrated Stripe subscriptions and NextAuth.js"
-  }]
+const aboutData = {
+  title: "About Me",
+  description: [
+    "Computer Science graduate from UConn passionate about full-stack solutions that solve real problems. Earned B.S. with 3.6 GPA through hands-on internships and entrepreneurial ventures.",
+    "At Lockheed Martin, owned production software used by 200+ technicians, cutting job-search time from 12 min to 2 min. Founded ForeAdvantage Golf SaaS monitoring 610+ golf courses, growing to 20+ users.",
+    "Technical expertise spans C/C++ systems programming to Next.js web development and AWS cloud infrastructure. Focused on creating software that delivers measurable value."
+  ],
+  experience: [
+    {
+      title: "Founder & Engineer",
+      company: "ForeAdvantage Golf",
+      period: "July 2024 - Present",
+      achievements: [
+        "Architected Next.js SaaS monitoring 610+ golf courses with Telegram alerts",
+        "Built serverless AWS backend with 99.9% uptime"
+      ],
+      tech: ["Next.js", "TypeScript", "AWS", "Stripe"]
+    },
+    {
+      title: "Software Engineer (Manufacturing)",
+      company: "Lockheed Martin – Sikorsky",
+      period: "July 2024 - Present",
+      achievements: [
+        "Engineered C#/.NET job-tracking app for 200+ technicians, reducing search time by 50%",
+        "Leading WPF tool development to replace 30-year legacy system"
+      ],
+      tech: ["C#", ".NET", "WPF", "SQL Server", "Docker"],
+      note: "(Promoted from Intern • May 2024 - July 2024)"
+    },
+    {
+      title: "Software Engineering Intern (Manufacturing)",
+      company: "Lockheed Martin – Sikorsky",
+      period: "May 2024 - July 2024",
+      achievements: [
+        "Contributed to job-tracking app development, implementing key workflow improvements",
+        "Assisted in WPF diagramming tool design and initial testing phases"
+      ],
+      tech: ["C#", ".NET", "WPF", "SQL Server"]
+    }
+  ]
+}
 
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 border-t border-border/50">
       <div className="container mx-auto max-w-5xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-              About Me
-            </h2>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                Computer Science graduate from UConn passionate about full-stack solutions that solve real problems.
-                Earned B.S. with 3.6 GPA through hands-on internships and entrepreneurial ventures.
-              </p>
-              <p>
-                At Lockheed Martin, owned production software used by 200+ technicians, cutting job-search time
-                from 12 min to 2 min. Founded ForeAdvantage Golf SaaS monitoring 610+ golf courses, growing to 20+ users.
-              </p>
-              <p>
-                Technical expertise spans C/C++ systems programming to Next.js web development and AWS cloud infrastructure.
-                Focused on creating software that delivers measurable value.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Technical Skills</CardTitle>
-                <CardDescription>
-                  Technologies and tools I work with
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {skills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
-                      <span className="text-sm">{skill.icon}</span>
-                      {skill.name}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Professional Experience</CardTitle>
-                <CardDescription>
-                  My career journey and achievements
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {experience.map((exp, index) => (
-                  <div key={index} className="border-l-2 border-accent pl-4">
-                    <h4 className="font-semibold text-foreground">{exp.title}</h4>
-                    <p className="text-sm text-muted-foreground">{exp.company} • {exp.period}</p>
-                    <p className="text-sm text-muted-foreground mt-1">{exp.description}</p>
-                  </div>
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
+            {aboutData.title}
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left Column: About + Skills */}
+            <div className="space-y-8">
+              <div className="space-y-4 text-muted-foreground">
+                {aboutData.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
                 ))}
-              </CardContent>
-            </Card>
+              </div>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Technical Skills</CardTitle>
+                  <CardDescription>
+                    Technologies and tools I work with
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {skills.map((skill, index) => (
+                      <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
+                        <span className="text-sm">{skill.icon}</span>
+                        {skill.name}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Right Column: Experience */}
+            <div>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Professional Experience</CardTitle>
+                  <CardDescription>
+                    My career journey and achievements
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {aboutData.experience.map((exp, index) => (
+                    <div key={index} className="border-l-2 border-accent pl-4 pb-4">
+                      <h4 className="font-semibold text-foreground">{exp.title}</h4>
+                      <p className="text-sm text-muted-foreground mb-1">{exp.company} • {exp.period}</p>
+                      {exp.note && <p className="text-xs text-muted-foreground italic mb-2">{exp.note}</p>}
+                      <div className="text-sm text-muted-foreground space-y-1 mb-2">
+                        {exp.achievements.map((achievement, idx) => (
+                          <p key={idx}>• {achievement}</p>
+                        ))}
+                      </div>
+                      <div className="flex flex-wrap gap-1">
+                        {exp.tech.map((tech, idx) => (
+                          <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
