@@ -95,8 +95,8 @@ const aboutData = {
   title: "About Me",
   description: [
     "Computer Science graduate from UConn passionate about building full-stack solutions to solve real problems. Earned B.S. with hands-on internships and entrepreneurial ventures.",
-    "At Lockheed Martin, owned production software used by 200+ technicians, cutting job-search time from 12 min to 2 min. Founded ForeAdvantage Golf SaaS monitoring 610+ golf courses, growing to 20+ users.",
-    "Technical expertise spans C/C++ systems programming to Next.js web development and AWS cloud infrastructure. Focused on creating software that delivers measurable value."
+    "At Lockheed Martin, own production software in use daily by 200+ technicians, driving efficiency and creating tangible cost savings. Founded ForeAdvantageGolf, a SaaS monitoring tee times at 610+ golf courses, growing to 20+ users in first month after launch.",
+    "I build robust full-stack applications with a focus on performant backend architecture, leveraging a C/C++ systems perspective to ensure efficiency from the ground up."
   ],
   experience: [
     {
@@ -104,8 +104,8 @@ const aboutData = {
       company: "ForeAdvantage Golf",
       period: "July 2024 - Present",
       achievements: [
-        "Architected Next.js SaaS monitoring 610+ golf courses with Telegram alerts",
-        "Built serverless AWS backend with 99.9% uptime"
+        "Shipped a Next.js SaaS that monitors 610+ golf courses and alerts users to tee times via a Telegram bot",
+        "Grew to 20+ users within 6 months; surfaced 1,300+ tee times; p95 time-to-success of 3.6 hours"
       ],
       tech: ["Next.js", "TypeScript", "AWS", "Stripe"]
     },
@@ -125,7 +125,7 @@ const aboutData = {
       period: "May 2024 - July 2024",
       achievements: [
         "Engineered a React + C# job‑tracking app for 200+ technicians; 50% faster searches and ~70 hrs/week saved with end‑to‑end observability",
-        "Engineered a WPF‑based interactive alternative to PDF design diagrams; completed initial trials and now driving the corporate adoption case"
+        "Built WPF‑based interactive alternative to PDF design diagrams; completed initial trials and now driving corporate adoption case"
       ],
       tech: ["TypeScript", "React", "C#", "WPF", "AWS"]
     }
