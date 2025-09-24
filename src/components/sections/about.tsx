@@ -104,7 +104,7 @@ const aboutData = {
       company: "ForeAdvantage Golf",
       period: "July 2024 - Present",
       achievements: [
-        "Shipped a Next.js SaaS that monitors 610+ golf courses and alerts users to tee times via a Telegram bot",
+        "Shipped a Next.js SaaS monitoring 610+ golf courses, alerting users to tee times via Telegram",
         "Grew to 20+ users within 6 months; surfaced 1,300+ tee times; p95 time-to-success of 3.6 hours"
       ],
       tech: ["Next.js", "TypeScript", "AWS", "Stripe"]
