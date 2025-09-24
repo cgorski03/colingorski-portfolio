@@ -3,32 +3,41 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import CodeBlock from "@/components/ui/code-block"
 
 const projects = [
   {
-    title: "Synchrony Analytics - Capstone",
-    description: "Next.js dashboard with Recharts heatmaps providing real-time observability into Core Web Vitals. MongoDB pipeline tested to 500k events/day with 45ms query latency.",
-    technologies: ["Next.js 15", "TypeScript", "MongoDB", "AWS", "Recharts"],
-    image: "/project1.jpg",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/example"
+    title: "ForeAdvantage Golf",
+    description: "Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with Stripe subscriptions achieving 99.9% uptime.",
+    technologies: ["Next.js 15", "AWS", "Stripe", "NextAuth.js", "Telegram Bot"],
+    liveUrl: "https://foreadvantagegolf.com",
+    githubUrl: "https://github.com/cgorski03",
+    preview: (
+      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+        <span className="text-muted-foreground">Project Preview</span>
+      </div>
+    )
   },
   {
     title: "Magic Folder",
     description: "Privacy-first semantic file-manager indexing 10k+ local documents without cloud calls. Faiss integration enables sub-50ms vector search with 95% precision.",
     technologies: ["C++20", "Faiss", "Ollama", "SQLite", "SQLCipher"],
-    image: "/project2.jpg",
     liveUrl: "https://github.com/cgorski03/magic-folder",
-    githubUrl: "https://github.com/cgorski03/magic-folder"
+    githubUrl: "https://github.com/cgorski03/magic-folder",
+    preview: (
+      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+        <span className="text-muted-foreground">Project Preview</span>
+      </div>
+    )
   },
   {
-    title: "ForeAdvantage Golf",
-    description: "Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with Stripe subscriptions achieving 99.9% uptime.",
-    technologies: ["Next.js 15", "AWS", "Stripe", "NextAuth.js", "Telegram Bot"],
-    image: "/project3.jpg",
-    liveUrl: "https://foreadvantagegolf.com",
-    githubUrl: "https://github.com/cgorski03"
-  }
+    title: "Stripe AWS Integration",
+    description: "Production-ready serverless subscription management platform using Lambda, DynamoDB and real-time Stripe webhook processing.",
+    technologies: ["AWS Lambda", "DynamoDB", "Stripe API", "AWS Cognito", "TypeScript", "AWS CDK"],
+    liveUrl: "https://github.com/cgorski03/stripe-aws-integration",
+    githubUrl: "https://github.com/cgorski03/stripe-aws-integration",
+    preview: <CodeBlock />
+  },
 ]
 
 export default function Projects() {
@@ -48,9 +57,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <Card key={index} className="group duration-300 flex flex-col h-full space-between">
               <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                  <span className="text-muted-foreground">Project Preview</span>
-                </div>
+                {project.preview}
               </div>
               <CardHeader className="flex-grow">
                 <CardTitle className="group-hover:text-accent transition-colors">
