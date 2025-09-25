@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
       <div className="container mx-auto max-w-5xl px-6 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 items-center">
           {/* Left: Name and Email */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 justify-self-start">
             <h3 className="text-lg font-semibold text-foreground">Colin Gorski</h3>
             <a
               href="mailto:cgorski03@gmail.com"
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           {/* Center: Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 justify-self-center">
             <a
               href="https://www.linkedin.com/in/colingorski/"
               target="_blank"
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Right: Copyright and Legal */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm text-muted-foreground">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm text-muted-foreground justify-self-end">
             <p>© {new Date().getFullYear()} Colin Gorski</p>
           </div>
         </div>
