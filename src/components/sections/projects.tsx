@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import CodeBlock from "@/components/ui/code-block"
 import TerminalBlock from "@/components/ui/terminal-block"
 import { ExternalSiteIcon } from "@/components/ui/icons"
+
 const projects = [
   {
     title: "ForeAdvantage Golf",
@@ -93,12 +94,17 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="flex-1 bg-blue-500 text-white hover:bg-blue-600">
-            <a href="https://www.github.com/cgorski03" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1">
-              View More Projects
-              <ExternalSiteIcon />
+          <p className="text-muted-foreground">
+            See more on{" "}
+            <a
+              href="https://github.com/cgorski03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:text-accent/80 underline underline-offset-4 transition-colors"
+            >
+              GitHub
             </a>
-          </Button>
+          </p>
         </div>
       </div>
     </section>
