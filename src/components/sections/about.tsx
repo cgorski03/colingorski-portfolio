@@ -107,7 +107,7 @@ const aboutData = {
         "Shipped a Next.js SaaS monitoring 610+ golf courses, alerting users to tee times via Telegram",
         "Grew to 20+ users within 6 months; surfaced 1,300+ tee times; p95 time-to-success of 3.6 hours"
       ],
-      tech: ["Next.js", "TypeScript", "AWS", "Stripe"]
+      tech: ["Next.js", "TypeScript", "AWS", "Stripe", "SQL"]
     },
     {
       title: "Software Engineer (Manufacturing)",

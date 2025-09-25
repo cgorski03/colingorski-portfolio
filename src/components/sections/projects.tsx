@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import CodeBlock from "@/components/ui/code-block"
+import TerminalBlock from "@/components/ui/terminal-block"
 import { ExternalSiteIcon } from "@/components/ui/icons"
 const projects = [
   {
@@ -22,11 +23,7 @@ const projects = [
     description: "Privacy-first semantic file-manager indexing 10k+ local documents without cloud calls. Faiss integration enables sub-50ms vector search with 95% precision.",
     technologies: ["C++20", "Faiss", "Ollama", "SQLite", "SQLCipher"],
     githubUrl: "https://github.com/cgorski03/magic-folder",
-    preview: (
-      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-        <span className="text-muted-foreground">Project Preview</span>
-      </div>
-    )
+    preview: <TerminalBlock />
   },
   {
     title: "Stripe AWS Integration",
