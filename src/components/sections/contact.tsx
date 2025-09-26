@@ -39,7 +39,6 @@ const contactMethods = [
 export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 border-t border-border/50">
-      <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Get In Touch
@@ -68,7 +67,6 @@ export default function Contact() {
             </a>
           ))}
         </div>
-      </div>
     </section>
   )
 }

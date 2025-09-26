@@ -28,20 +28,22 @@ export default function Home() {
         onProjectsClick={scrollToProjects}
         onContactClick={scrollToContact}
       />
-      <div ref={heroRef}>
-        <Hero 
-          onProjectsClick={scrollToProjects}
-          onContactClick={scrollToContact}
-        />
-      </div>
-      <div ref={aboutRef}>
-        <About />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
+      <div className="container mx-auto max-w-6xl">
+        <div ref={heroRef}>
+          <Hero 
+            onProjectsClick={scrollToProjects}
+            onContactClick={scrollToContact}
+          />
+        </div>
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
+        <div ref={contactRef}>
+          <Contact />
+        </div>
       </div>
       <Footer />
     </>

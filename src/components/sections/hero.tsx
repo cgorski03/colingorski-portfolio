@@ -9,8 +9,7 @@ interface HeroProps {
 
 export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
   return (
-    <section className="py-24 pt-32">
-      <div className="container mx-auto max-w-5xl px-6">
+    <section className="py-24 pt-32 px-6">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           {/* Headshot */}
           <div className="flex-shrink-0">
@@ -53,7 +52,6 @@ export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

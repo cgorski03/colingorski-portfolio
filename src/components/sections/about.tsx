@@ -135,7 +135,6 @@ const aboutData = {
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 border-t border-border/50">
-      <div className="container mx-auto max-w-5xl">
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
             {aboutData.title}
@@ -202,7 +201,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }
