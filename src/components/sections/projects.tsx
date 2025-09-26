@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import CodeBlock from "@/components/ui/code-block"
 import TerminalBlock from "@/components/ui/terminal-block"
+import Image from "next/image"
 import { ExternalSiteIcon } from "@/components/ui/icons"
 
 const projects = [
@@ -13,10 +14,15 @@ const projects = [
     description: "Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with Stripe subscriptions achieving 99.9% uptime.",
     technologies: ["Next.js 15", "AWS", "Stripe", "NextAuth.js", "Telegram Bot"],
     liveUrl: "https://foreadvantagegolf.com",
+    githubUrl: "https://github.com/cgorski03",
     preview: (
-      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-        <span className="text-muted-foreground">Project Preview</span>
-      </div>
+      <Image
+        src="/foreadvantagegolf.png"
+        alt="ForeAdvantage Golf project preview"
+        width={400}
+        height={225}
+        className="w-full h-full object-cover"
+      />
     )
   },
   {
@@ -38,7 +44,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-muted/30 border-t border-border/50">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Featured Projects
@@ -65,7 +71,7 @@ export default function Projects() {
               <CardContent className="mt-auto">
                 <div className="flex flex-wrap gap-2 mb-4 overflow-x-auto min-h-[2.5rem]">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary">
+                    <Badge key={techIndex} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors">
                       {tech}
                     </Badge>
                   ))}

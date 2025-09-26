@@ -183,7 +183,6 @@ export default function About() {
                     <div key={index} className="border-l-2 border-accent pl-4 pb-4">
                       <h4 className="font-semibold text-foreground">{exp.title}</h4>
                       <p className="text-sm text-muted-foreground mb-1">{exp.company} • {exp.period}</p>
-                      {exp.note && <p className="text-xs text-muted-foreground italic mb-2">{exp.note}</p>}
                       <div className="text-sm text-muted-foreground space-y-1 mb-2">
                         {exp.achievements.map((achievement, idx) => (
                           <p key={idx}>• {achievement}</p>

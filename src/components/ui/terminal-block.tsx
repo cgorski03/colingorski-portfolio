@@ -12,13 +12,15 @@ export default function TerminalBlock() {
       </div>
 
       {/* Terminal Output */}
+      {/* TODO: I want to make this interactive so you can actually scroll through the output */}
+
       <div className="flex-1 font-mono text-sm leading-relaxed">
         <div className="text-[#98c379] mb-2">
           <span className="text-[#61afef]">▶</span> <span className="text-[#e06c75]">magic_cli</span> <span className="text-[#98c379]">search</span> <span className="text-[#d19a66]">--query</span> <span className="text-[#d19a66]">"privacy-focused local semantic search"</span>
         </div>
         <div className="text-[#abb2bf] mb-1"></div>
         <div className="text-[#61afef] mb-2">
-          ✨ <span className="text-[#abb2bf]">Found</span> <span className="text-[#d19a66]">5</span> <span className="text-[#abb2bf]">files and</span> <span className="text-[#d19a66]">42</span> <span className="text-[#abb2bf]">relevant chunks...</span>
+          <span className="text-[#abb2bf]">Found</span> <span className="text-[#d19a66]">5</span> <span className="text-[#abb2bf]">files and</span> <span className="text-[#d19a66]">42</span> <span className="text-[#abb2bf]">relevant chunks...</span>
         </div>
         <div className="text-[#abb2bf] mb-1"></div>
         <div className="text-[#ffd700] mb-2">
