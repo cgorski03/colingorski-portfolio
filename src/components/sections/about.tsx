@@ -94,9 +94,9 @@ const skills = [
 const aboutData = {
   title: "About Me",
   description: [
-    "Computer Science graduate from UConn passionate about building full-stack solutions to solve real problems. Earned B.S. with hands-on internships and entrepreneurial ventures.",
-    "At Lockheed Martin, own production software in use daily by 200+ technicians, driving efficiency and creating tangible cost savings. Founded ForeAdvantageGolf, a SaaS monitoring tee times at 610+ golf courses, growing to 20+ users in first month after launch.",
-    "I build robust full-stack applications with a focus on performant backend architecture, leveraging a C/C++ systems perspective to ensure efficiency from the ground up."
+    "I’m a backend‑leaning full‑stack engineer who turns real‑world workflows into reliable software. UConn CS grad with a systems‑level C/C++ foundation that keeps me focused on performance, correctness, and observability.",
+    "I work end‑to‑end: model the data and APIs, build the services, wire up CI/CD and containerized deploys, and instrument everything so issues are traceable and rollbacks are fast. I prefer typed code, clear interfaces, and automation over ceremony.",
+    "My daily tools are TypeScript, SQL, Docker, and AWS. I enjoy shipping products-from internal tools close to operations to SaaS-and I’m always looking for roles where ownership and measurable impact matter."
   ],
   experience: [
     {
@@ -135,72 +135,72 @@ const aboutData = {
 export default function About() {
   return (
     <section id="about" className="py-24 px-6 border-t border-border/50">
-        <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
-            {aboutData.title}
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column: About + Skills */}
-            <div className="space-y-8">
-              <div className="space-y-4 text-muted-foreground">
-                {aboutData.description.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Technical Skills</CardTitle>
-                  <CardDescription>
-                    Technologies and tools I work with
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.map((skill, index) => (
-                      <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
-                        <span className="text-sm">{skill.icon}</span>
-                        {skill.name}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+      <div className="mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
+          {aboutData.title}
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Left Column: About + Skills */}
+          <div className="space-y-8">
+            <div className="space-y-4 text-muted-foreground">
+              {aboutData.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
 
-            {/* Right Column: Experience */}
-            <div>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Professional Experience</CardTitle>
-                  <CardDescription>
-                    My career journey and achievements
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {aboutData.experience.map((exp, index) => (
-                    <div key={index} className="border-l-2 border-accent pl-4 pb-4">
-                      <h4 className="font-semibold text-foreground">{exp.title}</h4>
-                      <p className="text-sm text-muted-foreground mb-1">{exp.company} • {exp.period}</p>
-                      <div className="text-sm text-muted-foreground space-y-1 mb-2">
-                        {exp.achievements.map((achievement, idx) => (
-                          <p key={idx}>• {achievement}</p>
-                        ))}
-                      </div>
-                      <div className="flex flex-wrap gap-1">
-                        {exp.tech.map((tech, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Technical Skills</CardTitle>
+                <CardDescription>
+                  Technologies and tools I work with
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.map((skill, index) => (
+                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
+                      <span className="text-sm">{skill.icon}</span>
+                      {skill.name}
+                    </Badge>
                   ))}
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Right Column: Experience */}
+          <div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Professional Experience</CardTitle>
+                <CardDescription>
+                  My career journey and achievements
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {aboutData.experience.map((exp, index) => (
+                  <div key={index} className="border-l-2 border-accent pl-4 pb-4">
+                    <h4 className="font-semibold text-foreground">{exp.title}</h4>
+                    <p className="text-sm text-muted-foreground mb-1">{exp.company} • {exp.period}</p>
+                    <div className="text-sm text-muted-foreground space-y-1 mb-2">
+                      {exp.achievements.map((achievement, idx) => (
+                        <p key={idx}>• {achievement}</p>
+                      ))}
+                    </div>
+                    <div className="flex flex-wrap gap-1">
+                      {exp.tech.map((tech, idx) => (
+                        <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
           </div>
         </div>
+      </div>
     </section>
   )
 }
