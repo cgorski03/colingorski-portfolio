@@ -1,8 +1,5 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-
-
 type NavbarProps = {
   onAboutClick: () => void;
   onProjectsClick: () => void;

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://colingorski.dev/sitemap.xml
+Sitemap: https://colingorski.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

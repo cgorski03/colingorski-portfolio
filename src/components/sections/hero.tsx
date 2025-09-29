@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface HeroProps {
   onProjectsClick: () => void;
@@ -13,13 +14,13 @@ export default function Hero({ onProjectsClick }: HeroProps) {
           {/* Headshot */}
           <div className="flex-shrink-0">
             <div className="relative h-32 w-32 md:h-48 md:w-48">
-              <img
+              <Image
                 src="/headshot.jpg"
                 alt="Colin Gorski - Professional headshot of a full-stack software engineer specializing in TypeScript, React, and AWS"
                 className="h-full w-full rounded-full object-cover"
                 width={192}
                 height={192}
-                loading="eager"
+                priority
               />
               {/* Optional: Add a subtle ring for flair */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/10" />

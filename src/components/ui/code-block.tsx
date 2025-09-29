@@ -20,7 +20,7 @@ export default function CodeBlock() {
           <span className="text-[#c678dd]">const</span> {'{'} <span className="text-[#e06c75]">userId</span> {'}'} = <span className="text-[#61afef]">JSON.parse</span>(<span className="text-[#e06c75]">event</span>.<span className="text-[#e06c75]">body</span>!);
         </div>
         <div className="text-[#abb2bf] ml-4 mb-1">
-          <span className="text-[#5c6370]">// Create Stripe customer</span>
+          <span className="text-[#5c6370]">{/* Create Stripe customer */}</span>
         </div>
         <div className="text-[#abb2bf] ml-4 mb-1">
           <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">customer</span> = <span className="text-[#c678dd]">await</span> <span className="text-[#e06c75]">stripe</span>.<span className="text-[#e06c75]">customers</span>.<span className="text-[#e06c75]">create</span>({'{'}
@@ -35,7 +35,7 @@ export default function CodeBlock() {
           {'}'});
         </div>
         <div className="text-[#abb2bf] ml-4 mb-1">
-          <span className="text-[#5c6370]">// Create checkout session</span>
+          <span className="text-[#5c6370]">{/* Create checkout session */}</span>
         </div>
         <div className="text-[#abb2bf] ml-4 mb-1">
           <span className="text-[#c678dd]">const</span> <span className="text-[#e06c75]">session</span> = <span className="text-[#c678dd]">await</span> <span className="text-[#e06c75]">stripe</span>.<span className="text-[#e06c75]">checkout</span>.<span className="text-[#e06c75]">sessions</span>.<span className="text-[#e06c75]">create</span>({'{'}
@@ -44,7 +44,7 @@ export default function CodeBlock() {
           <span className="text-[#98c379]">customer</span>: <span className="text-[#e06c75]">customer</span>.<span className="text-[#e06c75]">id</span>,
         </div>
         <div className="text-[#abb2bf] ml-8 mb-1">
-          <span className="text-[#98c379]">mode</span>: <span className="text-[#d19a66]">'subscription'</span>,
+          <span className="text-[#98c379]">mode</span>: <span className="text-[#d19a66]">&apos;subscription&apos;</span>,
         </div>
         <div className="text-[#abb2bf] ml-8 mb-1">
           <span className="text-[#98c379]">success_url</span>: <span className="text-[#d19a66]">`$&#123;APP_URL&#125;/success`</span>
