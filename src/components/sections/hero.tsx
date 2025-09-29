@@ -9,15 +9,18 @@ interface HeroProps {
 
 export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
   return (
-    <section className="py-24 pt-32 px-6">
+    <header className="py-24 pt-32 px-6">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           {/* Headshot */}
           <div className="flex-shrink-0">
             <div className="relative h-32 w-32 md:h-48 md:w-48">
               <img
                 src="/headshot.jpg"
-                alt="Professional headshot of Colin Gorski"
+                alt="Colin Gorski - Professional headshot of a full-stack software engineer specializing in TypeScript, React, and AWS"
                 className="h-full w-full rounded-full object-cover"
+                width={192}
+                height={192}
+                loading="eager"
               />
               {/* Optional: Add a subtle ring for flair */}
               <div className="absolute inset-0 rounded-full border-2 border-primary/10" />
@@ -42,16 +45,16 @@ export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start">
+            <nav className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start" aria-label="Main navigation">
               <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600" onClick={onProjectsClick}>
                 View Projects
               </Button>
               <Button variant="outline" size="lg" onClick={onDownloadResume}>
                 Download Resume
               </Button>
-            </div>
+            </nav>
           </div>
         </div>
-    </section>
+    </header>
   );
 }

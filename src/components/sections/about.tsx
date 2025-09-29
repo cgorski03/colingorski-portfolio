@@ -134,9 +134,9 @@ const aboutData = {
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 border-t border-border/50">
+    <section id="about" className="py-24 px-6 border-t border-border/50" aria-labelledby="about-heading">
       <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
+        <h2 id="about-heading" className="text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
           {aboutData.title}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -156,11 +156,11 @@ export default function About() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2" role="list" aria-label="Technical skills">
                   {skills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors">
-                      <span className="text-sm">{skill.icon}</span>
-                      {skill.name}
+                    <Badge key={index} variant="secondary" className="flex items-center gap-1.5 rounded-md border border-transparent hover:border-border/30 transition-colors" role="listitem">
+                      <span className="text-sm" aria-hidden="true">{skill.icon}</span>
+                      <span>{skill.name}</span>
                     </Badge>
                   ))}
                 </div>
@@ -179,22 +179,22 @@ export default function About() {
               </CardHeader>
               <CardContent className="space-y-4">
                 {aboutData.experience.map((exp, index) => (
-                  <div key={index} className="border-l-2 border-accent pl-4 pb-4">
-                    <h4 className="font-semibold text-foreground">{exp.title}</h4>
+                  <article key={index} className="border-l-2 border-accent pl-4 pb-4">
+                    <h3 className="font-semibold text-foreground">{exp.title}</h3>
                     <p className="text-sm text-muted-foreground mb-1">{exp.company} • {exp.period}</p>
-                    <div className="text-sm text-muted-foreground space-y-1 mb-2">
+                    <ul className="text-sm text-muted-foreground space-y-1 mb-2" role="list">
                       {exp.achievements.map((achievement, idx) => (
-                        <p key={idx}>• {achievement}</p>
+                        <li key={idx}>{achievement}</li>
                       ))}
-                    </div>
-                    <div className="flex flex-wrap gap-1">
+                    </ul>
+                    <div className="flex flex-wrap gap-1" role="list" aria-label={`Technologies used at ${exp.company}`}>
                       {exp.tech.map((tech, idx) => (
-                        <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors">
+                        <Badge key={idx} variant="secondary" className="text-xs px-2 py-0.5 rounded-sm border border-transparent hover:border-border/20 transition-colors" role="listitem">
                           {tech}
                         </Badge>
                       ))}
                     </div>
-                  </div>
+                  </article>
                 ))}
               </CardContent>
             </Card>
