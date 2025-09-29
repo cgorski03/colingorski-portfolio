@@ -94,9 +94,9 @@ const skills = [
 const aboutData = {
   title: "About Me",
   description: [
-    "I’m a backend‑leaning full‑stack engineer who turns real‑world workflows into reliable software. UConn CS grad with a systems‑level C/C++ foundation that keeps me focused on performance, correctness, and observability.",
-    "I work end‑to‑end: model the data and APIs, build the services, wire up CI/CD and containerized deploys, and instrument everything so issues are traceable and rollbacks are fast. I prefer typed code, clear interfaces, and automation over ceremony.",
-    "My daily tools are TypeScript, SQL, Docker, and AWS. I enjoy shipping products-from internal tools close to operations to SaaS-and I’m always looking for roles where ownership and measurable impact matter."
+    "I’m a backend‑leaning full‑stack engineer who loves turning real‑world workflows into reliable software. UConn CS grad with a systems‑level C/C++ foundation that keeps me focused on performance, correctness, and observability.",
+    "I work end‑to‑end: model the data and APIs, build the services, wire up CI/CD and containerized deploys, and instrument everything so issues are traceable and rollbacks are fast. I value static types and automation to reduce toil and errors.",
+    "My daily tools are TypeScript, SQL, Docker, and AWS. I enjoy shipping products, and I’m always looking for roles where ownership and measurable impact matter."
   ],
   experience: [
     {
