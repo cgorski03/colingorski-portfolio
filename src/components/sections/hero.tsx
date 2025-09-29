@@ -4,10 +4,9 @@ import { Button } from "@/components/ui/button"
 
 interface HeroProps {
   onProjectsClick: () => void;
-  onDownloadResume: () => void;
 }
 
-export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
+export default function Hero({ onProjectsClick }: HeroProps) {
   return (
     <header className="py-24 pt-32 px-6">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
@@ -49,8 +48,13 @@ export default function Hero({ onProjectsClick, onDownloadResume }: HeroProps) {
               <Button size="lg" className="bg-blue-500 text-white hover:bg-blue-600" onClick={onProjectsClick}>
                 View Projects
               </Button>
-              <Button variant="outline" size="lg" onClick={onDownloadResume}>
-                Download Resume
+              <Button 
+                variant="outline" 
+                size="lg" 
+                onClick={() => window.open('/ColinGorskiResume.pdf', '_blank')}
+                aria-label="View resume in new tab"
+              >
+                View Resume
               </Button>
             </nav>
           </div>

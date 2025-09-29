@@ -32,7 +32,6 @@ export default function Home() {
         <div ref={heroRef}>
           <Hero 
             onProjectsClick={scrollToProjects}
-            onContactClick={scrollToContact}
           />
         </div>
         <div ref={aboutRef}>
