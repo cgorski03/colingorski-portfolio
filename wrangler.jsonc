@@ -12,11 +12,11 @@
   "routes": [
     {
       "pattern": "colingorski.com/*",
-      "custom_domain": true
+      "zone_name": "colingorski.com"
     },
     {
       "pattern": "www.colingorski.com/*",
-      "custom_domain": true
+      "zone_name": "colingorski.com"
     }
   ]
 }
