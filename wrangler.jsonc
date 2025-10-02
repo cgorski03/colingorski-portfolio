@@ -9,14 +9,25 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
-  "routes": [
-    {
-      "pattern": "colingorski.com/*",
-      "zone_name": "colingorski.com"
+  "env": {
+    "production": {
+      "name": "colingorski-portfolio",
+      "routes": [
+        {
+          "pattern": "colingorski.com/*",
+          "zone_name": "colingorski.com"
+        },
+        {
+          "pattern": "www.colingorski.com/*",
+          "zone_name": "colingorski.com"
+        }
+      ]
     },
-    {
-      "pattern": "www.colingorski.com/*",
-      "zone_name": "colingorski.com"
+    "preview": {
+      "name": "colingorski-portfolio-preview"
+    },
+    "development": {
+      "name": "colingorski-portfolio-dev"
     }
-  ]
+  }
 }
