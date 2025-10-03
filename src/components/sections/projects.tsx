@@ -86,7 +86,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list" aria-label="Featured projects">
         {projects.map((project, index) => (
           <Card key={index} className="group duration-300 flex flex-col h-full space-between" role="listitem">
-            <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
+            <div className="aspect-video bg-muted rounded-t-lg overflow-hidden -mt-px -mx-px">
               {project.preview}
             </div>
             <CardHeader className="flex-grow">
