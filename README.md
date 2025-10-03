@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Colin Gorski - Portfolio Website
 
-## Getting Started
+A modern, simple portfolio website built with Next.js, showcasing my work as a full-stack software engineer. The site features a clean design with smooth animations and is optimized for performance and SEO.
 
-First, run the development server:
+## Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Visit the live site at: [colingorski.com](https://colingorski.com)
+
+## Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: Cloudflare Pages
+- **Fonts**: Geist Sans & Geist Mono
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+│   ├── layout.tsx      # Root layout with metadata
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/
+│   ├── layout/         # Layout components (navbar, footer)
+│   ├── sections/       # Page sections (hero, about, projects, contact)
+│   └── ui/            # Reusable UI components
+└── public/            # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment Workflow
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses GitHub Actions for automated deployment to Cloudflare Pages:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Automatic Deployments
 
-## Learn More
+- **Pull Requests**: Automatically deploys to a preview environment
+- **Main Branch**: Automatically deploys to production
 
-To learn more about Next.js, take a look at the following resources:
+### Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run deploy:prod` - Deploy to production
+- `npm run deploy:preview` - Deploy to preview environment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Skipping CI
 
-## Deploy on Vercel
+To skip automatic deployment for documentation changes or minor updates, include `[skip ci]` in your commit message:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git commit -m "Update README [skip ci]"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Content Management
+
+The portfolio content is managed through:
+
+- **Personal Info**: `src/app/layout.tsx` (metadata, structured data)
+- **Projects**: `src/components/sections/projects.tsx`
+- **About Section**: `src/components/sections/about.tsx`
+- **Contact Info**: `src/components/sections/contact.tsx`
+
+## Customization
+
+### Colors & Theme
+
+The site uses CSS custom properties defined in `src/app/globals.css` for consistent theming.
+
+### Components
+
+All components are built with Tailwind CSS and follow a consistent design system using:
+- Radix UI primitives
+- Custom component variants
+- Responsive design patterns
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built by [Colin Gorski](https://colingorski.com)
