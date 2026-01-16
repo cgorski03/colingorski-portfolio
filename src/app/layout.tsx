@@ -148,6 +148,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://resume.colingorski.com" />
+        <link rel="dns-prefetch" href="https://resume.colingorski.com" />
+        <link rel="prefetch" href="https://resume.colingorski.com" as="document" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

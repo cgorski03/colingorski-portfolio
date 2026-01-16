@@ -52,7 +52,7 @@ export default function Hero({ onProjectsClick }: HeroProps) {
               <Button 
                 variant="outline" 
                 size="lg" 
-                onClick={() => window.open('/ColinGorskiResume.pdf', '_blank')}
+                onClick={() => window.open('https://resume.colingorski.com', '_blank')}
                 aria-label="View resume in new tab"
               >
                 View Resume
