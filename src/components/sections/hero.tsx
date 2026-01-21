@@ -16,7 +16,7 @@ export default function Hero({ onProjectsClick }: HeroProps) {
             <div className="relative h-32 w-32 md:h-48 md:w-48">
               <Image
                 src="/headshot.jpg"
-                alt="Colin Gorski - Professional headshot of a full-stack software engineer specializing in TypeScript, React, and AWS"
+                alt="Colin Gorski - Professional headshot of a software engineer specializing in backend systems, infrastructure, and distributed systems"
                 className="h-full w-full rounded-full object-cover"
                 width={192}
                 height={192}
@@ -32,7 +32,7 @@ export default function Hero({ onProjectsClick }: HeroProps) {
             {/* Grouped Headline for better structure and spacing */}
             <div className="mb-6">
               <h1 className="text-balance text-4xl font-bold text-foreground md:text-5xl">
-                Full-Stack Software Engineer
+                Backend & Infrastructure Engineer
               </h1>
               <p className="text-balance mt-2 text-2xl font-medium text-muted-foreground md:text-3xl">
                 Delivering Measurable Impact
@@ -40,8 +40,8 @@ export default function Hero({ onProjectsClick }: HeroProps) {
             </div>
 
             <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">
-              From optimizing manufacturing workflows by 80% at Lockheed Martin
-              to shipping a full-stack SaaS from idea to launch.
+              From building manufacturing platforms saving $350k/year at Lockheed Martin
+              to shipping cloud-native SaaS applications from idea to launch.
             </p>
 
             {/* Action Buttons */}

@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Colin Gorski - Full-Stack Software Engineer",
+    default: "Colin Gorski - Software Engineer",
     template: "%s | Colin Gorski"
   },
-  description: "Full-stack software engineer specializing in TypeScript, React, AWS, and C#. Delivering measurable impact through optimized workflows and reliable software solutions. View my portfolio of projects including SaaS applications and manufacturing automation.",
+  description: "Software engineer focused on backend systems, infrastructure, and distributed systems. Building manufacturing platforms on Kubernetes, serverless AWS backends, and cloud-native applications.",
   keywords: [
     "Colin Gorski",
     "software engineer",
-    "full-stack developer",
-    "TypeScript",
-    "React",
-    "Next.js",
+    "backend engineer",
+    "infrastructure engineer",
+    "distributed systems",
+    "Kubernetes",
     "AWS",
+    "TypeScript",
     "C#",
-    "portfolio",
+    "platform engineering",
     "SaaS",
     "manufacturing automation",
-    "Lockheed Martin",
-    "ForeAdvantage Golf"
+    "Lockheed Martin"
   ],
   authors: [{ name: "Colin Gorski", url: "https://colingorski.com" }],
   creator: "Colin Gorski",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://colingorski.com',
-    title: 'Colin Gorski - Full-Stack Software Engineer',
-    description: 'Full-stack software engineer specializing in TypeScript, React, AWS, and C#. Delivering measurable impact through optimized workflows and reliable software solutions.',
+    title: 'Colin Gorski - Software Engineer',
+    description: 'Software engineer focused on backend systems, infrastructure, and distributed systems. Building manufacturing platforms on Kubernetes and cloud-native applications.',
     siteName: 'Colin Gorski Portfolio',
     images: [
       {
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Colin Gorski - Full-Stack Software Engineer',
-    description: 'Full-stack software engineer specializing in TypeScript, React, AWS, and C#. Delivering measurable impact through optimized workflows.',
+    title: 'Colin Gorski - Software Engineer',
+    description: 'Software engineer focused on backend systems, infrastructure, and distributed systems. Delivering measurable impact through reliable software.',
     images: ['/headshot.jpg'],
     creator: '@colingorski',
   },
@@ -102,8 +102,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Colin Gorski",
-    "jobTitle": "Full-Stack Software Engineer",
-    "description": "Full-stack software engineer specializing in TypeScript, React, AWS, and C#. Delivering measurable impact through optimized workflows and reliable software solutions.",
+    "jobTitle": "Software Engineer",
+    "description": "Software engineer focused on backend systems, infrastructure, and distributed systems. Building manufacturing platforms on Kubernetes and cloud-native applications.",
     "url": "https://colingorski.dev",
     "image": "https://colingorski.dev/headshot.jpg",
     "sameAs": [
@@ -112,19 +112,18 @@ export default function RootLayout({
     ],
     "email": "cgorski03@gmail.com",
     "knowsAbout": [
-      "TypeScript",
-      "React",
-      "Next.js",
+      "Distributed Systems",
+      "Kubernetes",
       "AWS",
+      "TypeScript",
       "C#",
-      "JavaScript",
-      "Python",
-      "SQL",
+      "PostgreSQL",
       "Docker",
-      "Git",
-      "Stripe",
-      "Manufacturing Automation",
-      "SaaS Development"
+      "OpenTelemetry",
+      "Platform Engineering",
+      "Backend Development",
+      "Infrastructure",
+      "Manufacturing Automation"
     ],
     "worksFor": [
       {

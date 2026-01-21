@@ -6,7 +6,6 @@ import {
   CSharpIcon,
   CPlusPlusIcon,
   TypeScriptIcon,
-  JavaScriptIcon,
   PythonIcon,
   SQLIcon,
   NextIcon,
@@ -27,16 +26,12 @@ const skills = [
     icon: <CSharpIcon />
   },
   {
-    name: "C++",
-    icon: <CPlusPlusIcon />
-  },
-  {
     name: "TypeScript",
     icon: <TypeScriptIcon />
   },
   {
-    name: "JavaScript",
-    icon: <JavaScriptIcon />
+    name: "C++",
+    icon: <CPlusPlusIcon />
   },
   {
     name: "Python",
@@ -47,28 +42,12 @@ const skills = [
     icon: <SQLIcon />
   },
   {
-    name: "Next.js",
-    icon: <NextIcon />
-  },
-  {
-    name: "React",
-    icon: <ReactIcon />
-  },
-  {
-    name: "Tailwind CSS",
-    icon: <TailwindIcon />
-  },
-  {
     name: ".NET",
     icon: <DotNetIcon />
   },
   {
     name: "Node.js",
     icon: <NodeIcon />
-  },
-  {
-    name: "SQL Server",
-    icon: <SQLServerIcon />
   },
   {
     name: "AWS",
@@ -79,12 +58,28 @@ const skills = [
     icon: <DockerIcon />
   },
   {
-    name: "Stripe",
-    icon: <StripeIcon />
+    name: "SQL Server",
+    icon: <SQLServerIcon />
+  },
+  {
+    name: "React",
+    icon: <ReactIcon />
+  },
+  {
+    name: "Next.js",
+    icon: <NextIcon />
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <TailwindIcon />
   },
   {
     name: "Git",
     icon: <GitIcon />
+  },
+  {
+    name: "Stripe",
+    icon: <StripeIcon />
   }
 ]
 
@@ -104,30 +99,31 @@ const aboutData = {
       company: "ForeAdvantage Golf",
       period: "July 2024 - Present",
       achievements: [
-        "Shipped a Next.js SaaS monitoring 610+ golf courses, alerting users to tee times via Telegram",
-        "Grew to 20+ users within 6 months; surfaced 1,300+ tee times; p95 time-to-success of 3.6 hours"
+        "Shipped Next.js 15 SaaS monitoring 610+ golf courses with Telegram bot alerts and Stripe subscriptions",
+        "Deployed serverless AWS backend with 99.9% uptime; grew to 20+ users, surfacing 1,300+ tee times"
       ],
-      tech: ["Next.js", "TypeScript", "AWS", "Stripe", "SQL"]
+      tech: ["Next.js", "TypeScript", "AWS", "Stripe", "PostgreSQL"]
     },
     {
       title: "Software Engineer (Manufacturing)",
       company: "Lockheed Martin – Sikorsky",
-      period: "July 2024 - Present",
+      period: "July 2025 - Present",
       achievements: [
-        "Engineered a full‑stack pick‑to‑light system (React, C#) that cut material‑location time by 80% (260+ technician hours monthly) by parsing job materials and driving a bin‑lights controller",
-        "Shipped GitOps-style CI/CD for harness tests with a custom-built linter enforcing standards; containerized pipeline delivers 20s deploys with commit-linked, versioned releases and rollback"
+        "Led greenfield design of manufacturing observability platform on Kubernetes (OpenTelemetry, Prometheus), saving $180k/year",
+        "Engineered pick‑to‑light system cutting material‑location time by 80%, saving $350k annually",
+        "Shipped GitOps CI/CD with full audit traceability for DoD compliance; 20s containerized deploys"
       ],
-      tech: ["TypeScript", "React", "C#", "AWS", "Docker", "Linux"],
+      tech: ["Kubernetes", "C#", "TypeScript", "OpenTelemetry", "Docker"],
     },
     {
-      title: "Software Engineering Intern (Manufacturing)",
+      title: "Software Engineering Intern",
       company: "Lockheed Martin – Sikorsky",
-      period: "May 2024 - July 2024",
+      period: "May 2024 - July 2025",
       achievements: [
-        "Engineered a React + C# job‑tracking app for 200+ technicians; 50% faster searches and ~70 hrs/week saved with end‑to‑end observability",
-        "Built WPF‑based interactive alternative to PDF design diagrams; completed initial trials and now driving corporate adoption case"
+        "Owned job‑tracking app for 200+ technicians; cut search time from 12 to 2 min, saving $86k annually",
+        "Architected WPF harness‑diagramming tool replacing 30‑year‑old PDF workflow; reduced wiring errors by 8%"
       ],
-      tech: ["TypeScript", "React", "C#", "WPF", "AWS"]
+      tech: ["C#", "TypeScript", "WPF", "MSSQL", "Oracle SQL"]
     }
   ]
 }
