@@ -78,8 +78,8 @@ const ReceiptVisual = () => (
 const projects = [
     {
         title: "Parcener",
-        description: "Open-source, privacy-first receipt splitter. Features real-time collaborative receipt splitting, guest access via QR, and automated OCR with proportional tax/tip settlement.",
-        technologies: ["TypeScript", "TanStack Start", "PostgreSQL", "Docker", "Google Gen AI"],
+        description: "Receipt-splitting app with AI-powered OCR achieving 96% first-parse accuracy in 8 seconds. Real-time collaborative rooms with 40+ active uploaders.",
+        technologies: ["TypeScript", "TanStack Start", "PostgreSQL", "Cloudflare Workers", "Google Gen AI"],
         liveUrl: "https://parcener.app",
         githubUrl: "https://github.com/cgorski03/parcener",
         preview: <ReceiptVisual />,
@@ -87,8 +87,8 @@ const projects = [
     },
     {
         title: "ForeAdvantage Golf",
-        description: "Next.js SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with Stripe subscriptions achieving 99.9% uptime.",
-        technologies: ["Next.js", "AWS CDK", "Stripe", "SQL", "NextAuth.js", "Telegram API"],
+        description: "Next.js SaaS monitoring 610+ golf courses with Telegram bot alerts. Serverless AWS backend with 99.9% uptime, 20+ users, 1,300+ tee times surfaced.",
+        technologies: ["Next.js", "AWS CDK", "Stripe", "PostgreSQL", "NextAuth.js", "Telegram API"],
         liveUrl: "https://foreadvantagegolf.com",
         preview: (
             <Image
